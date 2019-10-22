@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form name="identityForm">
+            <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"/>
+            <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+            <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+            <button  name="submit" id="submit" onclick="resultForm(identityForm)">Valider</button> <!--Onclick permet d'activer la fonction "resultForm" en lien avec le formulaire lorsqu'on clique sur le bouton-->
+        </form>
+        <script>
+          //"function" permet de créer une fonction, il est suivi de son nom avec des () puis des {} entre lesquelles il y a d'autres fonctions.
+          function resultForm() {
+            //Le .value qui suit le nom de la variable (qui est aussi l'id de l'input) permet de donner la valeur dans le formulaire à la variable.
+            alert ('Nom : ' + lastname.value + '\nPrénom : ' + firstname.value + '\nVille : ' + city.value);
+          }
+        </script>
+    </body>
+</html>
